@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		567484B81AA1988A00A89BEF /* やさしさゴシック手書き.otf in Resources */ = {isa = PBXBuildFile; fileRef = 56EF4A1A1AA1957D008AEBA5 /* やさしさゴシック手書き.otf */; };
+		567484BB1AA19A1800A89BEF /* botan_shita.png in Resources */ = {isa = PBXBuildFile; fileRef = 567484B91AA19A1800A89BEF /* botan_shita.png */; };
+		567484BC1AA19A1800A89BEF /* botan_ue.png in Resources */ = {isa = PBXBuildFile; fileRef = 567484BA1AA19A1800A89BEF /* botan_ue.png */; };
+		567484BE1AA1A08000A89BEF /* ruru.png in Resources */ = {isa = PBXBuildFile; fileRef = 567484BD1AA1A08000A89BEF /* ruru.png */; };
+		56EF4A191AA190E4008AEBA5 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 56EF4A181AA190E4008AEBA5 /* menu.png */; };
 		E92874771AA160C9006BAD5D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92874761AA160C9006BAD5D /* AVFoundation.framework */; };
 		E928747D1AA16241006BAD5D /* CameraUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = E928747C1AA16241006BAD5D /* CameraUtil.swift */; };
 		E9E638AD1AA0BAB0004EB467 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E638AC1AA0BAB0004EB467 /* AppDelegate.swift */; };
@@ -31,6 +36,11 @@
 
 /* Begin PBXFileReference section */
 		383F603A68C2C8E3FAED4323 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		567484B91AA19A1800A89BEF /* botan_shita.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = botan_shita.png; sourceTree = "<group>"; };
+		567484BA1AA19A1800A89BEF /* botan_ue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = botan_ue.png; sourceTree = "<group>"; };
+		567484BD1AA1A08000A89BEF /* ruru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ruru.png; sourceTree = "<group>"; };
+		56EF4A181AA190E4008AEBA5 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		56EF4A1A1AA1957D008AEBA5 /* やさしさゴシック手書き.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "やさしさゴシック手書き.otf"; sourceTree = "<group>"; };
 		A0182BD453160A86C6C327C4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		ABECC48F945397AC67B2EEE6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92874761AA160C9006BAD5D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -124,6 +134,11 @@
 		E9E638AA1AA0BAB0004EB467 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				567484BD1AA1A08000A89BEF /* ruru.png */,
+				567484B91AA19A1800A89BEF /* botan_shita.png */,
+				567484BA1AA19A1800A89BEF /* botan_ue.png */,
+				56EF4A1A1AA1957D008AEBA5 /* やさしさゴシック手書き.otf */,
+				56EF4A181AA190E4008AEBA5 /* menu.png */,
 				E9E638AB1AA0BAB0004EB467 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -229,6 +244,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				567484BC1AA19A1800A89BEF /* botan_ue.png in Resources */,
+				567484BE1AA1A08000A89BEF /* ruru.png in Resources */,
+				567484BB1AA19A1800A89BEF /* botan_shita.png in Resources */,
+				567484B81AA1988A00A89BEF /* やさしさゴシック手書き.otf in Resources */,
+				56EF4A191AA190E4008AEBA5 /* menu.png in Resources */,
 				E9E638B51AA0BAB0004EB467 /* Main.storyboard in Resources */,
 				E9E638BA1AA0BAB0004EB467 /* LaunchScreen.xib in Resources */,
 				E9E638B71AA0BAB0004EB467 /* Images.xcassets in Resources */,

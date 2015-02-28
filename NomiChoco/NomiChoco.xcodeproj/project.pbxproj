@@ -23,6 +23,14 @@
 		E9F6F5061AA1FCC300320828 /* tozurusample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9F6F5051AA1FCC300320828 /* tozurusample.jpg */; };
 		E9F6F5091AA1FDCB00320828 /* templatematch.mm in Sources */ = {isa = PBXBuildFile; fileRef = E9F6F5081AA1FDCB00320828 /* templatematch.mm */; };
 		E9F6F50B1AA1FF5400320828 /* matchcheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F6F50A1AA1FF5400320828 /* matchcheckViewController.swift */; };
+		E9F6F5111AA220E800320828 /* botan_shita.png in Resources */ = {isa = PBXBuildFile; fileRef = E9F6F50C1AA220E800320828 /* botan_shita.png */; };
+		E9F6F5121AA220E800320828 /* botan_ue.png in Resources */ = {isa = PBXBuildFile; fileRef = E9F6F50D1AA220E800320828 /* botan_ue.png */; };
+		E9F6F5131AA220E800320828 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = E9F6F50E1AA220E800320828 /* menu.png */; };
+		E9F6F5141AA220E800320828 /* ruru.png in Resources */ = {isa = PBXBuildFile; fileRef = E9F6F50F1AA220E800320828 /* ruru.png */; };
+		E9F6F5151AA220E800320828 /* やさしさゴシック手書き.otf in Resources */ = {isa = PBXBuildFile; fileRef = E9F6F5101AA220E800320828 /* やさしさゴシック手書き.otf */; };
+		E9F6F5171AA2252900320828 /* rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F6F5161AA2252900320828 /* rule.swift */; };
+		E9F6F5191AA22A8800320828 /* sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F6F5181AA22A8800320828 /* sample.swift */; };
+		E9F6F51B1AA22D4800320828 /* playrule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F6F51A1AA22D4800320828 /* playrule.swift */; };
 		FF31E9BF6478B38B32CA2C9E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABECC48F945397AC67B2EEE6 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +72,14 @@
 		E9F6F5071AA1FDCB00320828 /* templatematch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = templatematch.h; sourceTree = "<group>"; };
 		E9F6F5081AA1FDCB00320828 /* templatematch.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = templatematch.mm; sourceTree = "<group>"; };
 		E9F6F50A1AA1FF5400320828 /* matchcheckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = matchcheckViewController.swift; sourceTree = "<group>"; };
+		E9F6F50C1AA220E800320828 /* botan_shita.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = botan_shita.png; sourceTree = "<group>"; };
+		E9F6F50D1AA220E800320828 /* botan_ue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = botan_ue.png; sourceTree = "<group>"; };
+		E9F6F50E1AA220E800320828 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		E9F6F50F1AA220E800320828 /* ruru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ruru.png; sourceTree = "<group>"; };
+		E9F6F5101AA220E800320828 /* やさしさゴシック手書き.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "やさしさゴシック手書き.otf"; sourceTree = "<group>"; };
+		E9F6F5161AA2252900320828 /* rule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rule.swift; sourceTree = "<group>"; };
+		E9F6F5181AA22A8800320828 /* sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sample.swift; sourceTree = "<group>"; };
+		E9F6F51A1AA22D4800320828 /* playrule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = playrule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,8 +157,11 @@
 				E971AB771AA19CE00041F524 /* labelDetector.mm */,
 				E9F6F5071AA1FDCB00320828 /* templatematch.h */,
 				E9F6F5081AA1FDCB00320828 /* templatematch.mm */,
-				E9E638AA1AA0BAB0004EB467 /* Supporting Files */,
+				E9F6F5161AA2252900320828 /* rule.swift */,
 				E9F6F50A1AA1FF5400320828 /* matchcheckViewController.swift */,
+				E9F6F5181AA22A8800320828 /* sample.swift */,
+				E9F6F51A1AA22D4800320828 /* playrule.swift */,
+				E9E638AA1AA0BAB0004EB467 /* Supporting Files */,
 			);
 			path = NomiChoco;
 			sourceTree = "<group>";
@@ -151,6 +170,11 @@
 			isa = PBXGroup;
 			children = (
 				E9F6F5051AA1FCC300320828 /* tozurusample.jpg */,
+				E9F6F50C1AA220E800320828 /* botan_shita.png */,
+				E9F6F50D1AA220E800320828 /* botan_ue.png */,
+				E9F6F50E1AA220E800320828 /* menu.png */,
+				E9F6F50F1AA220E800320828 /* ruru.png */,
+				E9F6F5101AA220E800320828 /* やさしさゴシック手書き.otf */,
 				E9F6F5031AA1FC8100320828 /* tozuru.jpg */,
 				E971AB671AA18D660041F524 /* haarcascade_frontalface_alt.xml */,
 				E9E638AB1AA0BAB0004EB467 /* Info.plist */,
@@ -259,11 +283,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9E638B51AA0BAB0004EB467 /* Main.storyboard in Resources */,
+				E9F6F5141AA220E800320828 /* ruru.png in Resources */,
 				E9E638BA1AA0BAB0004EB467 /* LaunchScreen.xib in Resources */,
+				E9F6F5131AA220E800320828 /* menu.png in Resources */,
+				E9F6F5111AA220E800320828 /* botan_shita.png in Resources */,
 				E971AB681AA18D660041F524 /* haarcascade_frontalface_alt.xml in Resources */,
+				E9F6F5121AA220E800320828 /* botan_ue.png in Resources */,
 				E9E638B71AA0BAB0004EB467 /* Images.xcassets in Resources */,
 				E9F6F5061AA1FCC300320828 /* tozurusample.jpg in Resources */,
 				E9F6F5041AA1FC8100320828 /* tozuru.jpg in Resources */,
+				E9F6F5151AA220E800320828 /* やさしさゴシック手書き.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,10 +344,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9E638B21AA0BAB0004EB467 /* ViewController.swift in Sources */,
+				E9F6F51B1AA22D4800320828 /* playrule.swift in Sources */,
 				E9E638AD1AA0BAB0004EB467 /* AppDelegate.swift in Sources */,
 				E971AB781AA19CE00041F524 /* labelDetector.mm in Sources */,
 				E9F6F50B1AA1FF5400320828 /* matchcheckViewController.swift in Sources */,
 				E971AB751AA190E80041F524 /* Detector.mm in Sources */,
+				E9F6F5191AA22A8800320828 /* sample.swift in Sources */,
+				E9F6F5171AA2252900320828 /* rule.swift in Sources */,
 				E9F6F5091AA1FDCB00320828 /* templatematch.mm in Sources */,
 				E928747D1AA16241006BAD5D /* CameraUtil.swift in Sources */,
 				E9E638B01AA0BAB0004EB467 /* NomiChoco.xcdatamodeld in Sources */,

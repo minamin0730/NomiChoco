@@ -3,3 +3,4 @@
 //
 
 #import "OpenCVSample-Bridging-Header.h"
+#import "templatematch.h"

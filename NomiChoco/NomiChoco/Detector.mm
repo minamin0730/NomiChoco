@@ -53,25 +53,7 @@
     CGContextDrawImage(contextRef, CGRectMake(0, 0, cols, rows), image.CGImage);
     CGContextRelease(contextRef);
     
-    // 顔検出
-    std::vector<cv::Rect> faces;
-    cascade.detectMultiScale(mat, faces,
-                             1.1, 2,
-                             CV_HAAR_SCALE_IMAGE,
-                             cv::Size(30, 30));
-    
-    // 顔の位置に丸を描く
-    std::vector<cv::Rect>::const_iterator r = faces.begin();
-    for(; r != faces.end(); ++r) {
-        cv::Point center;
-        int radius;
-        center.x = cv::saturate_cast<int>((r->x + r->width*0.5));
-        center.y = cv::saturate_cast<int>((r->y + r->height*0.5));
-        radius = cv::saturate_cast<int>((r->width + r->height));
-        cv::circle(mat, center, radius, cv::Scalar(80,80,255), 3, 8, 0 );
-        NSLog(@"検出！");
-    }
-    
+        
     
     // cv::Mat -> UIImage変換
     UIImage *resultImage = MatToUIImage(mat);

@@ -19,6 +19,10 @@
 		E9E638B71AA0BAB0004EB467 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E638B61AA0BAB0004EB467 /* Images.xcassets */; };
 		E9E638BA1AA0BAB0004EB467 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E638B81AA0BAB0004EB467 /* LaunchScreen.xib */; };
 		E9E638C61AA0BAB0004EB467 /* NomiChocoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E638C51AA0BAB0004EB467 /* NomiChocoTests.swift */; };
+		E9F6F5041AA1FC8100320828 /* tozuru.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9F6F5031AA1FC8100320828 /* tozuru.jpg */; };
+		E9F6F5061AA1FCC300320828 /* tozurusample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9F6F5051AA1FCC300320828 /* tozurusample.jpg */; };
+		E9F6F5091AA1FDCB00320828 /* templatematch.mm in Sources */ = {isa = PBXBuildFile; fileRef = E9F6F5081AA1FDCB00320828 /* templatematch.mm */; };
+		E9F6F50B1AA1FF5400320828 /* matchcheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F6F50A1AA1FF5400320828 /* matchcheckViewController.swift */; };
 		FF31E9BF6478B38B32CA2C9E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABECC48F945397AC67B2EEE6 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +59,11 @@
 		E9E638BF1AA0BAB0004EB467 /* NomiChocoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NomiChocoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E638C41AA0BAB0004EB467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9E638C51AA0BAB0004EB467 /* NomiChocoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomiChocoTests.swift; sourceTree = "<group>"; };
+		E9F6F5031AA1FC8100320828 /* tozuru.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tozuru.jpg; sourceTree = "<group>"; };
+		E9F6F5051AA1FCC300320828 /* tozurusample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tozurusample.jpg; sourceTree = "<group>"; };
+		E9F6F5071AA1FDCB00320828 /* templatematch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = templatematch.h; sourceTree = "<group>"; };
+		E9F6F5081AA1FDCB00320828 /* templatematch.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = templatematch.mm; sourceTree = "<group>"; };
+		E9F6F50A1AA1FF5400320828 /* matchcheckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = matchcheckViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +139,10 @@
 				E9E638AE1AA0BAB0004EB467 /* NomiChoco.xcdatamodeld */,
 				E971AB761AA19CE00041F524 /* labelDetector.h */,
 				E971AB771AA19CE00041F524 /* labelDetector.mm */,
+				E9F6F5071AA1FDCB00320828 /* templatematch.h */,
+				E9F6F5081AA1FDCB00320828 /* templatematch.mm */,
 				E9E638AA1AA0BAB0004EB467 /* Supporting Files */,
+				E9F6F50A1AA1FF5400320828 /* matchcheckViewController.swift */,
 			);
 			path = NomiChoco;
 			sourceTree = "<group>";
@@ -138,6 +150,8 @@
 		E9E638AA1AA0BAB0004EB467 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E9F6F5051AA1FCC300320828 /* tozurusample.jpg */,
+				E9F6F5031AA1FC8100320828 /* tozuru.jpg */,
 				E971AB671AA18D660041F524 /* haarcascade_frontalface_alt.xml */,
 				E9E638AB1AA0BAB0004EB467 /* Info.plist */,
 			);
@@ -248,6 +262,8 @@
 				E9E638BA1AA0BAB0004EB467 /* LaunchScreen.xib in Resources */,
 				E971AB681AA18D660041F524 /* haarcascade_frontalface_alt.xml in Resources */,
 				E9E638B71AA0BAB0004EB467 /* Images.xcassets in Resources */,
+				E9F6F5061AA1FCC300320828 /* tozurusample.jpg in Resources */,
+				E9F6F5041AA1FC8100320828 /* tozuru.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +317,9 @@
 				E9E638B21AA0BAB0004EB467 /* ViewController.swift in Sources */,
 				E9E638AD1AA0BAB0004EB467 /* AppDelegate.swift in Sources */,
 				E971AB781AA19CE00041F524 /* labelDetector.mm in Sources */,
+				E9F6F50B1AA1FF5400320828 /* matchcheckViewController.swift in Sources */,
 				E971AB751AA190E80041F524 /* Detector.mm in Sources */,
+				E9F6F5091AA1FDCB00320828 /* templatematch.mm in Sources */,
 				E928747D1AA16241006BAD5D /* CameraUtil.swift in Sources */,
 				E9E638B01AA0BAB0004EB467 /* NomiChoco.xcdatamodeld in Sources */,
 			);

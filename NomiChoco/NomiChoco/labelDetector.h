@@ -1,5 +1,5 @@
 //
-//  UIViewController+Detector_mm.h
+//  UIViewController+labelDetector.h
 //  NomiChoco
 //
 //  Created by 岡田みなみ on 2015/02/28.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIViewController (Detector_mm)
+@interface UIViewController (labelDetector)
 
 @end

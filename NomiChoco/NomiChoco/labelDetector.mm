@@ -1,13 +1,13 @@
 //
-//  UIViewController+Detector_mm.m
+//  UIViewController+labelDetector.m
 //  NomiChoco
 //
 //  Created by 岡田みなみ on 2015/02/28.
 //  Copyright (c) 2015年 岡田みなみ. All rights reserved.
 //
 
-#import "UIViewController+Detector_mm.h"
+#import "labelDetector.h"
 
-@implementation UIViewController (Detector_mm)
+@implementation UIViewController (labelDetector)
 
 @end

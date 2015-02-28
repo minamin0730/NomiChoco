@@ -18,7 +18,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     var myDevice : AVCaptureDevice!
     // 出力先
     var myOutput : AVCaptureVideoDataOutput!
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -108,7 +108,6 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                 }
             }
         }
-        
         return true
     }
     
@@ -116,14 +115,18 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     // 毎フレーム実行される処理
     func captureOutput(captureOutput: AVCaptureOutput!, didOutputSampleBuffer sampleBuffer: CMSampleBuffer!, fromConnection connection: AVCaptureConnection!)
     {
-        dispatch_async(dispatch_get_main_queue(), {
+        dispatch_sync(dispatch_get_main_queue(), {
+            // 顔検出オブジェクト
+            let detector = Detector()
             
-            /**
-            *  ここでSampleBufferからUIImageを作成し、imageViewへ反映させる
-            */
-            // UIImageへ変換して表示させる
-            self.cameraView.image = CameraUtil.imageFromSampleBuffer(sampleBuffer)
+            // UIImageへ変換
+            let image = CameraUtil.imageFromSampleBuffer(sampleBuffer)
             
+            // 顔認識
+            let faceImage = detector.recognizeFace(image)
+            
+            // 表示
+            self.cameraView.image = faceImage
         })
     }
     

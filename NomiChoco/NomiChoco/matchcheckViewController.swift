@@ -77,6 +77,7 @@ class matchcheckViewController: UIViewController, AVCaptureMetadataOutputObjects
             }
             
             println("charaId:\(appDelegate.charaId)")
+            dismissViewControllerAnimated(true, completion: nil)
         }
     }
     @IBAction func pushed(sender: AnyObject) {

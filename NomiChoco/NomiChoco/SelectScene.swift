@@ -12,14 +12,43 @@ class SelectScene: SKScene{
     var table: SKShapeNode!
     let radius: CGFloat = 200.0
     var stagenum: Int = 1
+    var clearnum: Int = 0
     let buttonR = UIButton()
     let buttonL = UIButton()
     let buttonC = UIButton()
-    let Texture = SKTexture(imageNamed: "50mujitable.png")
+    var Texture: SKTexture!
+    let tb1 = SKTexture(imageNamed: "table1.png")
+    let tb2 = SKTexture(imageNamed: "table2.png")
+    let tb3 = SKTexture(imageNamed: "table3.png")
+    let tb4 = SKTexture(imageNamed: "table4.png")
     let bg1 = SKSpriteNode(imageNamed: "kaiten.png")
     let bg2 = SKSpriteNode(imageNamed: "tatami.jpg")
     
+    var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+    
     override func didMoveToView(view: SKView) {
+        if appDelegate.stagenum == nil{
+            self.stagenum = 1
+        }else{
+            self.stagenum = appDelegate.stagenum!
+        }
+        
+        if appDelegate.clear == nil{
+            self.clearnum = 0
+        }else{
+            self.clearnum = appDelegate.clear!
+        }
+        
+        if self.stagenum == 1{
+            self.Texture = tb1
+        }else if self.stagenum == 2{
+            self.Texture = tb2
+        }else if self.stagenum == 3{
+            self.Texture = tb3
+        }else if self.stagenum == 4{
+            self.Texture = tb4
+        }
+        
         self.bg1.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame))
         self.bg1.size = CGSizeMake(640, 1136)
         self.bg1.zPosition = 1.0
@@ -66,8 +95,8 @@ class SelectScene: SKScene{
     private func addTable(){
         table = SKShapeNode(circleOfRadius: radius)
         table.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame))
-        table.fillColor = UIColor.brownColor()
-        table.strokeColor = UIColor.brownColor()
+        table.fillColor = UIColor.whiteColor()
+        table.strokeColor = UIColor.clearColor()
         table.fillTexture = self.Texture
         
         table.physicsBody = SKPhysicsBody(circleOfRadius: radius)
@@ -99,7 +128,7 @@ class SelectScene: SKScene{
     }
     
     func downC(sender: UIButton){
-        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        
         appDelegate.stagenum = self.stagenum
         
         self.buttonR.removeFromSuperview()
@@ -112,11 +141,11 @@ class SelectScene: SKScene{
     }
     
     func upR(sender: UIButton){
-
+        
     }
     
     func upL(sender: UIButton){
-
+        
     }
     
 }

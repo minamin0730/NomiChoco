@@ -15,6 +15,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     let ballCategory: UInt32 = 0x1 << 1
     let paddleCategory: UInt32 = 0x1 << 2
     let startmes = SKLabelNode()
+    var clearnum: Int = 0
     var stage: Int = 0
     var paddle: SKSpriteNode!
     var blocks = [SKShapeNode]()
@@ -22,26 +23,40 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var score: Int = 0
     var stagenum: Int = 0
     let radius: CGFloat = 40.0
-    let numberOfBlocks = 1
+    var numberOfBlocks = 3
     let numberOfBalls = 1
     let ballSpeed: Double = 600.0
     let scoreLabel = SKLabelNode()
     let buttonR = UIButton()
     let buttonL = UIButton()
-  //  var charanum : Int = 0
+    var charanum : Int = 0
     var Texture: SKTexture!
     let hashi = SKTexture(imageNamed: "50hashi.png")
     let bg = SKSpriteNode(imageNamed: "bg.png")
-//    let sound = SKAction.playSoundFileNamed("game.mp3", waitForCompletion: true)
+    let shishamo: [SKTexture] = [SKTexture(imageNamed: "shishamo1"),SKTexture(imageNamed: "shishamo2"),SKTexture(imageNamed: "shishamo3")]
+    let dashimaki:[SKTexture] = [SKTexture(imageNamed: "dashimaki1"),SKTexture(imageNamed: "dashimaki2"),SKTexture(imageNamed: "dashimaki3"),
+        SKTexture(imageNamed: "dashimaki4")]
+    
+    //    let sound = SKAction.playSoundFileNamed("game.mp3", waitForCompletion: true)
     var player : AVAudioPlayer! = nil
-
+    let time  = SKLabelNode()
+    var startTime = NSDate()
+    let hit = SKAction.playSoundFileNamed("apple2.mp3", waitForCompletion: false)
+    var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+    
     
     override func didMoveToView(view: SKView) {
-        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        
         if appDelegate.stagenum == nil{
             self.stagenum = 1
         }else{
             self.stagenum = appDelegate.stagenum!
+        }
+        
+        if appDelegate.clear == nil{
+            self.clearnum = 0
+        }else{
+            self.clearnum = appDelegate.clear!
         }
         
         self.physicsWorld.contactDelegate = self
@@ -50,11 +65,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         player = AVAudioPlayer(contentsOfURL: audioPath, error: nil)
         player.prepareToPlay()
         player.play()
-//        self.runAction(sound)
+        //        self.runAction(sound)
         
         start_gamen()
-        
-       // self.charanum = 2
         
         if appDelegate.charaId == 1 {
             self.Texture = SKTexture(imageNamed: "ball_tsuki.png")
@@ -88,9 +101,18 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.bg.zPosition = 0
         self.addChild(bg)
         
+        //TIME
+        self.time.position = CGPointMake(140.0, self.size.height-50)
+        self.time.fontColor = UIColor.whiteColor()
+        self.time.text = "30"
+        self.time.fontSize = 100
+        self.time.verticalAlignmentMode = SKLabelVerticalAlignmentMode.Top
+        self.time.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.Right
+        self.time.zPosition = 2.0
+        self.addChild(self.time)
         
         
-        self.scoreLabel.position = CGPointMake(self.size.width-70, self.size.height-100)
+        self.scoreLabel.position = CGPointMake(self.size.width-80, self.size.height-125)
         self.scoreLabel.fontColor = UIColor.whiteColor()
         self.scoreLabel.text = "0"
         self.scoreLabel.fontSize = 100
@@ -115,7 +137,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.buttonL.addTarget(self, action: "downL:", forControlEvents: .TouchDown)
         self.buttonR.addTarget(self, action: "upR:", forControlEvents: .TouchUpInside)
         self.buttonL.addTarget(self, action: "upL:", forControlEvents: .TouchUpInside)
-
+        
         self.view?.addSubview(buttonR)
         self.view?.addSubview(buttonL)
         
@@ -140,60 +162,211 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.startmes.zPosition = 2.0
         self.addChild(startmes)
         
-        let move1 = SKAction.moveByX(400, y: 0, duration: 1)
+        let move1 = SKAction.moveByX(400, y: 0, duration: 0.8)
         let move2 = SKAction.waitForDuration(2)
-        let move3 = SKAction.moveByX(600, y: 0, duration: 1.5)
+        let move3 = SKAction.moveByX(600, y: 0, duration: 1.2)
         let seq = SKAction.sequence([move1,move2,move3])
         self.startmes.runAction(seq)
     }
     
+    
     private func addBlock(){
         var cnt: Int = 0
-//        for i in 0..<self.numberOfBlocks{
-//            let block = SKShapeNode(rectOfSize: CGSizeMake(50, 20))
-//            var row: Int = i / 7
-//            if cnt / 7 != 0{
-//                cnt = 0
-//            }
-//            block.position = CGPointMake(40 + (90*CGFloat(cnt)), self.size.height - 30 - (30*CGFloat(row)))
-//            block.fillColor = UIColor.blueColor()
-//            block.physicsBody = SKPhysicsBody(rectangleOfSize: CGSizeMake(50, 20))
-//            block.physicsBody!.dynamic = false
-//            block.physicsBody?.categoryBitMask = blockCategory
-//            block.physicsBody?.collisionBitMask = ballCategory
-//            block.physicsBody?.contactTestBitMask = ballCategory
-//            
-//            block.zPosition = 1.0
-//            self.addChild(block)
-//            self.blocks.append(block)
-//            cnt++
-//        }
-        for i in 0..<self.numberOfBlocks{
-            let block = SKShapeNode(rectOfSize: CGSizeMake(50, 20))
-            if self.stagenum == 1{
-                block.position = CGPointMake(150,300)
-            }else if stagenum == 2{
-                block.position = CGPointMake(300, 500)
-            }else if stagenum == 3{
-                block.position = CGPointMake(450, 700)
-            }else if stagenum == 4{
-                block.position = CGPointMake(150, 200)
-            }
+        //        for i in 0..<self.numberOfBlocks{
+        //            let block = SKShapeNode(rectOfSize: CGSizeMake(50, 20))
+        //            var row: Int = i / 7
+        //            if cnt / 7 != 0{
+        //                cnt = 0
+        //            }
+        //            block.position = CGPointMake(40 + (90*CGFloat(cnt)), self.size.height - 30 - (30*CGFloat(row)))
+        //            block.fillColor = UIColor.blueColor()
+        //            block.physicsBody = SKPhysicsBody(rectangleOfSize: CGSizeMake(50, 20))
+        //            block.physicsBody!.dynamic = false
+        //            block.physicsBody?.categoryBitMask = blockCategory
+        //            block.physicsBody?.collisionBitMask = ballCategory
+        //            block.physicsBody?.contactTestBitMask = ballCategory
+        //
+        //            block.zPosition = 1.0
+        //            self.addChild(block)
+        //            self.blocks.append(block)
+        //            cnt++
+        //        }
 
-//            block.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame))
-            block.fillColor = UIColor.blueColor()
+        if self.stagenum == 1{
+            let block = SKShapeNode(rectOfSize: CGSizeMake(40, 80))
+            let block1 = SKShapeNode(rectOfSize: CGSizeMake(40, 80))
+            let block2 = SKShapeNode(rectOfSize: CGSizeMake(40, 80))
+            block.position = CGPointMake(200,600)
+            block.fillTexture = self.shishamo[0]
+            block1.position = CGPointMake(250,600)
+            block1.fillTexture = self.shishamo[1]
+            block2.position = CGPointMake(300,600)
+            block2.fillTexture = self.shishamo[2]
+            block.fillColor = UIColor.whiteColor()
+            block1.fillColor = UIColor.whiteColor()
+            block2.fillColor = UIColor.whiteColor()
             block.physicsBody = SKPhysicsBody(rectangleOfSize: CGSizeMake(50, 20))
+            block1.physicsBody = SKPhysicsBody(rectangleOfSize: CGSizeMake(50, 20))
+            block2.physicsBody = SKPhysicsBody(rectangleOfSize: CGSizeMake(50, 20))
             block.physicsBody!.dynamic = false
+            block1.physicsBody!.dynamic = false
+            block2.physicsBody!.dynamic = false
             block.physicsBody?.categoryBitMask = blockCategory
+            block1.physicsBody?.categoryBitMask = blockCategory
+            block2.physicsBody?.categoryBitMask = blockCategory
             block.physicsBody?.collisionBitMask = ballCategory
+            block1.physicsBody?.collisionBitMask = ballCategory
+            block2.physicsBody?.collisionBitMask = ballCategory
+            
             block.physicsBody?.contactTestBitMask = ballCategory
+            block1.physicsBody?.contactTestBitMask = ballCategory
+            block2.physicsBody?.contactTestBitMask = ballCategory
             
             block.zPosition = 1.0
+            block1.zPosition = 1.0
+            block2.zPosition = 1.0
+            
             self.addChild(block)
+            self.addChild(block1)
+            self.addChild(block2)
             self.blocks.append(block)
-            cnt++
+            self.blocks.append(block1)
+            self.blocks.append(block2)
+        }else if stagenum == 2{
+            self.numberOfBlocks = 4
+            let block = SKShapeNode(rectOfSize: CGSizeMake(80, 40))
+            let block1 = SKShapeNode(rectOfSize: CGSizeMake(80, 40))
+            let block2 = SKShapeNode(rectOfSize: CGSizeMake(80, 40))
+            let block3 = SKShapeNode(rectOfSize: CGSizeMake(80,40))
+            block.position = CGPointMake(400, 700)
+            block.fillTexture = self.dashimaki[0]
+            block1.position = CGPointMake(490,700)
+            block1.fillTexture = self.dashimaki[1]
+            block2.position = CGPointMake(400,650)
+            block2.fillTexture = self.dashimaki[2]
+            block3.position = CGPointMake(490,650)
+            block3.fillTexture = self.dashimaki[3]
+            block.fillColor = UIColor.whiteColor()
+            block1.fillColor = UIColor.whiteColor()
+            block2.fillColor = UIColor.whiteColor()
+            block3.fillColor = UIColor.whiteColor()
+            
+            block.physicsBody = SKPhysicsBody(rectangleOfSize: CGSizeMake(50, 20))
+            block1.physicsBody = SKPhysicsBody(rectangleOfSize: CGSizeMake(50, 20))
+            block2.physicsBody = SKPhysicsBody(rectangleOfSize: CGSizeMake(50, 20))
+            block3.physicsBody = SKPhysicsBody(rectangleOfSize: CGSizeMake(50, 20))
+            block.physicsBody!.dynamic = false
+            block1.physicsBody!.dynamic = false
+            block2.physicsBody!.dynamic = false
+            block3.physicsBody!.dynamic = false
+            
+            block.physicsBody?.categoryBitMask = blockCategory
+            block1.physicsBody?.categoryBitMask = blockCategory
+            block2.physicsBody?.categoryBitMask = blockCategory
+            block3.physicsBody?.categoryBitMask = blockCategory
+            block.physicsBody?.collisionBitMask = ballCategory
+            block1.physicsBody?.collisionBitMask = ballCategory
+            block2.physicsBody?.collisionBitMask = ballCategory
+            block3.physicsBody?.collisionBitMask = ballCategory
+            
+            block.physicsBody?.contactTestBitMask = ballCategory
+            block1.physicsBody?.contactTestBitMask = ballCategory
+            block2.physicsBody?.contactTestBitMask = ballCategory
+            block3.physicsBody?.contactTestBitMask = ballCategory
+            
+            block.zPosition = 1.0
+            block1.zPosition = 1.0
+            block2.zPosition = 1.0
+            block3.zPosition = 1.0
+            
+            self.addChild(block)
+            self.addChild(block1)
+            self.addChild(block2)
+            self.addChild(block3)
+            self.blocks.append(block)
+            self.blocks.append(block1)
+            self.blocks.append(block2)
+            self.blocks.append(block3)
+            
+        }else if stagenum == 3{
+            let block = SKShapeNode(rectOfSize: CGSizeMake(40, 80))
+            let block1 = SKShapeNode(rectOfSize: CGSizeMake(40, 80))
+            let block2 = SKShapeNode(rectOfSize: CGSizeMake(40, 80))
+            block.position = CGPointMake(450, 700)
+            block1.position = CGPointMake(200,600)
+            block2.position = CGPointMake(200,600)
+            block.fillColor = UIColor.whiteColor()
+            block1.fillColor = UIColor.whiteColor()
+            block2.fillColor = UIColor.whiteColor()
+            block.physicsBody = SKPhysicsBody(rectangleOfSize: CGSizeMake(50, 20))
+            block1.physicsBody = SKPhysicsBody(rectangleOfSize: CGSizeMake(50, 20))
+            block2.physicsBody = SKPhysicsBody(rectangleOfSize: CGSizeMake(50, 20))
+            block.physicsBody!.dynamic = false
+            block1.physicsBody!.dynamic = false
+            block2.physicsBody!.dynamic = false
+            block.physicsBody?.categoryBitMask = blockCategory
+            block1.physicsBody?.categoryBitMask = blockCategory
+            block2.physicsBody?.categoryBitMask = blockCategory
+            block.physicsBody?.collisionBitMask = ballCategory
+            block1.physicsBody?.collisionBitMask = ballCategory
+            block2.physicsBody?.collisionBitMask = ballCategory
+            
+            block.physicsBody?.contactTestBitMask = ballCategory
+            block1.physicsBody?.contactTestBitMask = ballCategory
+            block2.physicsBody?.contactTestBitMask = ballCategory
+            
+            block.zPosition = 1.0
+            block1.zPosition = 1.0
+            block2.zPosition = 1.0
+            
+            self.addChild(block)
+            self.addChild(block1)
+            self.addChild(block2)
+            self.blocks.append(block)
+            self.blocks.append(block1)
+            self.blocks.append(block2)
+        }else if stagenum == 4{
+            let block = SKShapeNode(rectOfSize: CGSizeMake(40, 80))
+            let block1 = SKShapeNode(rectOfSize: CGSizeMake(40, 80))
+            let block2 = SKShapeNode(rectOfSize: CGSizeMake(40, 80))
+            let block3 = SKShapeNode(rectOfSize: CGSizeMake(40,80))
+            block.position = CGPointMake(150, 200)
+            block1.position = CGPointMake(200,600)
+            block2.position = CGPointMake(200,600)
+            block.fillColor = UIColor.whiteColor()
+            block1.fillColor = UIColor.whiteColor()
+            block2.fillColor = UIColor.whiteColor()
+            block.physicsBody = SKPhysicsBody(rectangleOfSize: CGSizeMake(50, 20))
+            block1.physicsBody = SKPhysicsBody(rectangleOfSize: CGSizeMake(50, 20))
+            block2.physicsBody = SKPhysicsBody(rectangleOfSize: CGSizeMake(50, 20))
+            block.physicsBody!.dynamic = false
+            block1.physicsBody!.dynamic = false
+            block2.physicsBody!.dynamic = false
+            block.physicsBody?.categoryBitMask = blockCategory
+            block1.physicsBody?.categoryBitMask = blockCategory
+            block2.physicsBody?.categoryBitMask = blockCategory
+            block.physicsBody?.collisionBitMask = ballCategory
+            block1.physicsBody?.collisionBitMask = ballCategory
+            block2.physicsBody?.collisionBitMask = ballCategory
+            
+            block.physicsBody?.contactTestBitMask = ballCategory
+            block1.physicsBody?.contactTestBitMask = ballCategory
+            block2.physicsBody?.contactTestBitMask = ballCategory
+            
+            block.zPosition = 1.0
+            block1.zPosition = 1.0
+            block2.zPosition = 1.0
+            
+            self.addChild(block)
+            self.addChild(block1)
+            self.addChild(block2)
+            self.blocks.append(block)
+            self.blocks.append(block1)
+            self.blocks.append(block2)
         }
-    }
+        
+        //            block.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame))
+       }
     private func addBall(){
         var directionX: Double = 1;
         for i in 0..<self.numberOfBalls{
@@ -252,20 +425,20 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     func upL(sender: UIButton){
         self.paddle.removeAllActions()
     }
-//    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-//        if self.balls.count == 0 {
-//            // 中略
-//        } else {
-//            super.touchesBegan(touches, withEvent: event)
-//            
-//            let touch = touches.anyObject() as UITouch
-//            let location = touch.locationInNode(self)
-//            let speed: CGFloat = 0.001
-//            let duration = NSTimeInterval(abs(location.x - self.paddle.position.x) * speed)
-//            let move = SKAction.moveToX(location.x, duration: duration)
-//            self.paddle.runAction(move)
-//        }
-//    }
+    //    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+    //        if self.balls.count == 0 {
+    //            // 中略
+    //        } else {
+    //            super.touchesBegan(touches, withEvent: event)
+    //
+    //            let touch = touches.anyObject() as UITouch
+    //            let location = touch.locationInNode(self)
+    //            let speed: CGFloat = 0.001
+    //            let duration = NSTimeInterval(abs(location.x - self.paddle.position.x) * speed)
+    //            let move = SKAction.moveToX(location.x, duration: duration)
+    //            self.paddle.runAction(move)
+    //        }
+    //    }
     
     func didBeginContact(contact: SKPhysicsContact!) {
         
@@ -283,6 +456,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         // ballとblockが接したときの処理。
         if firstBody.categoryBitMask & ballCategory != 0 &&
             secondBody.categoryBitMask & blockCategory != 0 {
+                self.runAction(hit)
                 secondBody.node?.removeFromParent()
                 score++
         }
@@ -340,7 +514,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             stage = 1
         }
         
-        if self.balls.count == 0 && stage == 1{
+        if (self.balls.count == 0 || self.time.text == "0") && stage == 1{
+            self.appDelegate.score = self.score
+            print(self.score)
+            self.removeAllActions()
+            self.removeAllChildren()
             self.buttonR.removeFromSuperview()
             self.buttonL.removeFromSuperview()
             let newScene = ResultScene(size: self.size)
@@ -348,13 +526,34 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             self.view?.presentScene(newScene)
         }
         
-        if self.score == 1{
-            self.buttonR.removeFromSuperview()
-            self.buttonL.removeFromSuperview()
-            let newScene = SelectScene(size: self.size)
-            newScene.scaleMode = SKSceneScaleMode.AspectFill
-            self.view?.presentScene(newScene)
-
+        
+        if self.score == numberOfBlocks{
+            clearnum++
+            if clearnum == 4{
+                self.appDelegate.score = self.score
+                print(self.score)
+                self.removeAllActions()
+                self.removeAllChildren()
+                self.buttonR.removeFromSuperview()
+                self.buttonL.removeFromSuperview()
+                let newScene = ResultScene(size: self.size)
+                newScene.scaleMode = SKSceneScaleMode.AspectFill
+                self.view?.presentScene(newScene)
+            }else{
+                appDelegate.clear = clearnum
+                self.removeAllActions()
+                self.removeAllChildren()
+                self.buttonR.removeFromSuperview()
+                self.buttonL.removeFromSuperview()
+                let newScene = SelectScene(size: self.size)
+                newScene.scaleMode = SKSceneScaleMode.AspectFill
+                self.view?.presentScene(newScene)
+            }
+            
+        }
+        
+        if balls.count > 0 && stage == 1{
+            self.time.text = String(34-Int(NSDate().timeIntervalSinceDate(self.startTime)))
         }
         
     }

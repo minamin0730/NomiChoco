@@ -32,7 +32,7 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="NomiChoco" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="呑みちょこ" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -71,7 +71,7 @@
         <!--Matchcheck View Controller-->
         <scene sceneID="dx6-LZ-ud3">
             <objects>
-                <viewController id="eOt-hA-SHL" customClass="matchcheckViewController" customModule="NomiChoco" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eOt-hA-SHL" customClass="matchcheckViewController" customModule="呑みちょこ" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wc7-Gx-sDg"/>
                         <viewControllerLayoutGuide type="bottom" id="tVM-St-V84"/>
@@ -121,6 +121,7 @@
                         <viewControllerLayoutGuide type="bottom" id="zw6-Xe-pYM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7nV-VL-EyF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -132,7 +133,7 @@
         <!--Sample View Controller-->
         <scene sceneID="wdq-qZ-LGy">
             <objects>
-                <viewController id="Gsc-12-9zw" customClass="sampleViewController" customModule="NomiChoco" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Gsc-12-9zw" customClass="sampleViewController" customModule="呑みちょこ" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="knR-By-h07"/>
                         <viewControllerLayoutGuide type="bottom" id="SgB-HF-PkI"/>
@@ -153,7 +154,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="29" y="41" width="258" height="21"/>
+                                    <rect key="frame" x="129.5" y="70" width="61.5" height="29.5"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="がでました！" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="if2-xw-Gs7">
@@ -162,7 +163,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="57" y="70" width="152" height="21"/>
+                                    <rect key="frame" x="85" y="107.5" width="150" height="29.5"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENM-3V-tYM">
@@ -247,7 +248,7 @@
         <!--Rule View Controller-->
         <scene sceneID="5h3-is-tG6">
             <objects>
-                <viewController id="lFN-EE-7TY" customClass="ruleViewController" customModule="NomiChoco" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lFN-EE-7TY" customClass="ruleViewController" customModule="呑みちょこ" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MQG-e8-m4K"/>
                         <viewControllerLayoutGuide type="bottom" id="chC-7v-4Ya"/>
@@ -388,16 +389,16 @@
             </objects>
             <point key="canvasLocation" x="-1219.5" y="-5"/>
         </scene>
-        <!--Start Scene-->
+        <!--Top-->
         <scene sceneID="BkL-AN-mAJ">
             <objects>
-                <viewController id="GcR-6x-I2X" customClass="StartScene" customModule="NomiChoco" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TopView" title="Top" id="GcR-6x-I2X" customClass="StartScene" customModule="呑みちょこ" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VLf-6O-QSa"/>
                         <viewControllerLayoutGuide type="bottom" id="5jx-HS-NBE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleAspectFit" id="1MA-SY-ZNE">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu.png" translatesAutoresizingMaskIntoConstraints="NO" id="uuX-CE-b9O">
@@ -510,7 +511,7 @@
         <!--Playrule View Controller-->
         <scene sceneID="27k-3b-g4l">
             <objects>
-                <viewController id="AWn-Wp-bcu" customClass="playruleViewController" customModule="NomiChoco" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="AWn-Wp-bcu" customClass="playruleViewController" customModule="呑みちょこ" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LZy-Sa-szi"/>
                         <viewControllerLayoutGuide type="bottom" id="FiB-X1-jB1"/>
@@ -640,21 +641,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0tA-ZR-uVR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="547.5" y="408"/>
+            <point key="canvasLocation" x="517.5" y="760"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="n1j-DZ-7MM">
             <objects>
-                <viewController id="jPr-Ln-Xbx" customClass="GameViewController" customModule="NomiChoco" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jPr-Ln-Xbx" customClass="GameViewController" customModule="呑みちょこ" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fg7-FL-DVB"/>
                         <viewControllerLayoutGuide type="bottom" id="IAF-jI-pFx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="AxL-6i-vyf" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="GcR-6x-I2X" kind="presentation" identifier="topView" id="16h-UE-Yw9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aQP-C3-iql" sceneMemberID="firstResponder"/>
             </objects>
@@ -670,6 +674,6 @@
         <image name="syoukan.png" width="630" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="das-ZI-WKu"/>
+        <segue reference="16h-UE-Yw9"/>
     </inferredMetricsTieBreakers>
 </document>

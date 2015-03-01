@@ -15,7 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var charaId: NSInteger = 0
     var stagenum: Int?
-
+    var clear: Int?
+    var score: Int?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.

@@ -41,6 +41,21 @@
 		E9387B6A1AA2C27800CF5C76 /* syoukan_momo.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B671AA2C27800CF5C76 /* syoukan_momo.png */; };
 		E9387B6D1AA2C36200CF5C76 /* syoukan_tozuru.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B6C1AA2C36200CF5C76 /* syoukan_tozuru.png */; };
 		E9387B6F1AA2C65F00CF5C76 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9387B6E1AA2C65F00CF5C76 /* Images-2.xcassets */; };
+		E9387B711AA2E59200CF5C76 /* apple2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9387B701AA2E59200CF5C76 /* apple2.mp3 */; };
+		E9387B791AA2E61F00CF5C76 /* dashimaki1.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B721AA2E61F00CF5C76 /* dashimaki1.png */; };
+		E9387B7A1AA2E61F00CF5C76 /* dashimaki2.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B731AA2E61F00CF5C76 /* dashimaki2.png */; };
+		E9387B7B1AA2E61F00CF5C76 /* dashimaki3.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B741AA2E61F00CF5C76 /* dashimaki3.png */; };
+		E9387B7C1AA2E61F00CF5C76 /* dashimaki4.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B751AA2E61F00CF5C76 /* dashimaki4.png */; };
+		E9387B7D1AA2E61F00CF5C76 /* shishamo1.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B761AA2E61F00CF5C76 /* shishamo1.png */; };
+		E9387B7E1AA2E61F00CF5C76 /* shishamo2.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B771AA2E61F00CF5C76 /* shishamo2.png */; };
+		E9387B7F1AA2E61F00CF5C76 /* shishamo3.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B781AA2E61F00CF5C76 /* shishamo3.png */; };
+		E9387B871AA2E64A00CF5C76 /* kaiten.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B801AA2E64A00CF5C76 /* kaiten.png */; };
+		E9387B881AA2E64A00CF5C76 /* table1.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B811AA2E64A00CF5C76 /* table1.png */; };
+		E9387B891AA2E64A00CF5C76 /* table2.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B821AA2E64A00CF5C76 /* table2.png */; };
+		E9387B8A1AA2E64A00CF5C76 /* table3.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B831AA2E64A00CF5C76 /* table3.png */; };
+		E9387B8B1AA2E64A00CF5C76 /* table4.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B841AA2E64A00CF5C76 /* table4.png */; };
+		E9387B8C1AA2E64A00CF5C76 /* tatami.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9387B851AA2E64A00CF5C76 /* tatami.jpg */; };
+		E9387B8D1AA2E64A00CF5C76 /* yuka.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9387B861AA2E64A00CF5C76 /* yuka.jpg */; };
 		E971AB681AA18D660041F524 /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = E971AB671AA18D660041F524 /* haarcascade_frontalface_alt.xml */; };
 		E971AB751AA190E80041F524 /* Detector.mm in Sources */ = {isa = PBXBuildFile; fileRef = E971AB741AA190E80041F524 /* Detector.mm */; };
 		E971AB781AA19CE00041F524 /* labelDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = E971AB771AA19CE00041F524 /* labelDetector.mm */; };
@@ -115,13 +130,28 @@
 		E9387B671AA2C27800CF5C76 /* syoukan_momo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = syoukan_momo.png; sourceTree = "<group>"; };
 		E9387B6C1AA2C36200CF5C76 /* syoukan_tozuru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = syoukan_tozuru.png; sourceTree = "<group>"; };
 		E9387B6E1AA2C65F00CF5C76 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
+		E9387B701AA2E59200CF5C76 /* apple2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = apple2.mp3; sourceTree = "<group>"; };
+		E9387B721AA2E61F00CF5C76 /* dashimaki1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dashimaki1.png; sourceTree = "<group>"; };
+		E9387B731AA2E61F00CF5C76 /* dashimaki2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dashimaki2.png; sourceTree = "<group>"; };
+		E9387B741AA2E61F00CF5C76 /* dashimaki3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dashimaki3.png; sourceTree = "<group>"; };
+		E9387B751AA2E61F00CF5C76 /* dashimaki4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dashimaki4.png; sourceTree = "<group>"; };
+		E9387B761AA2E61F00CF5C76 /* shishamo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shishamo1.png; sourceTree = "<group>"; };
+		E9387B771AA2E61F00CF5C76 /* shishamo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shishamo2.png; sourceTree = "<group>"; };
+		E9387B781AA2E61F00CF5C76 /* shishamo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shishamo3.png; sourceTree = "<group>"; };
+		E9387B801AA2E64A00CF5C76 /* kaiten.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kaiten.png; sourceTree = "<group>"; };
+		E9387B811AA2E64A00CF5C76 /* table1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = table1.png; sourceTree = "<group>"; };
+		E9387B821AA2E64A00CF5C76 /* table2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = table2.png; sourceTree = "<group>"; };
+		E9387B831AA2E64A00CF5C76 /* table3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = table3.png; sourceTree = "<group>"; };
+		E9387B841AA2E64A00CF5C76 /* table4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = table4.png; sourceTree = "<group>"; };
+		E9387B851AA2E64A00CF5C76 /* tatami.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tatami.jpg; sourceTree = "<group>"; };
+		E9387B861AA2E64A00CF5C76 /* yuka.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yuka.jpg; sourceTree = "<group>"; };
 		E971AB671AA18D660041F524 /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
 		E971AB691AA18F9C0041F524 /* NomiChoco-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NomiChoco-Bridging-Header.h"; sourceTree = "<group>"; };
 		E971AB731AA190E80041F524 /* OpenCVSample-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OpenCVSample-Bridging-Header.h"; sourceTree = "<group>"; };
 		E971AB741AA190E80041F524 /* Detector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Detector.mm; sourceTree = "<group>"; };
 		E971AB761AA19CE00041F524 /* labelDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = labelDetector.h; sourceTree = "<group>"; };
 		E971AB771AA19CE00041F524 /* labelDetector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = labelDetector.mm; sourceTree = "<group>"; };
-		E9E638A71AA0BAB0004EB467 /* NomiChoco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NomiChoco.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E638A71AA0BAB0004EB467 /* NomiChoco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = NomiChoco.app; path = "呑みちょこ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E638AB1AA0BAB0004EB467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9E638AC1AA0BAB0004EB467 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9E638AF1AA0BAB0004EB467 /* NomiChoco.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NomiChoco.xcdatamodel; sourceTree = "<group>"; };
@@ -192,6 +222,7 @@
 				E9387B361AA2A62A00CF5C76 /* ball_tozuru.png */,
 				E9387B371AA2A62A00CF5C76 /* ball_tsuki.png */,
 				E9387B381AA2A62A00CF5C76 /* syoukan_tsuki30.png */,
+				E9387B701AA2E59200CF5C76 /* apple2.mp3 */,
 				E9387B621AA2C0BE00CF5C76 /* ball_eikun.png */,
 				E9387B631AA2C0BE00CF5C76 /* ball_momo.png */,
 				E9387B391AA2A62A00CF5C76 /* bg.png */,
@@ -263,6 +294,13 @@
 			children = (
 				E9387B341AA2A1F900CF5C76 /* syoukan.png */,
 				E9387B301AA2A09900CF5C76 /* ball_toduru.png */,
+				E9387B801AA2E64A00CF5C76 /* kaiten.png */,
+				E9387B811AA2E64A00CF5C76 /* table1.png */,
+				E9387B821AA2E64A00CF5C76 /* table2.png */,
+				E9387B831AA2E64A00CF5C76 /* table3.png */,
+				E9387B841AA2E64A00CF5C76 /* table4.png */,
+				E9387B851AA2E64A00CF5C76 /* tatami.jpg */,
+				E9387B861AA2E64A00CF5C76 /* yuka.jpg */,
 				E9387B311AA2A09900CF5C76 /* syoukan_tsuki.png */,
 				E9387B2F1AA28C9C00CF5C76 /* chihaya.ttf */,
 				E9F6F5051AA1FCC300320828 /* tozurusample.jpg */,
@@ -270,6 +308,13 @@
 				E9F6F50D1AA220E800320828 /* botan_ue.png */,
 				E9387B2E1AA28C6200CF5C76 /* ちはやフォント.ttf */,
 				E9F6F50E1AA220E800320828 /* menu.png */,
+				E9387B721AA2E61F00CF5C76 /* dashimaki1.png */,
+				E9387B731AA2E61F00CF5C76 /* dashimaki2.png */,
+				E9387B741AA2E61F00CF5C76 /* dashimaki3.png */,
+				E9387B751AA2E61F00CF5C76 /* dashimaki4.png */,
+				E9387B761AA2E61F00CF5C76 /* shishamo1.png */,
+				E9387B771AA2E61F00CF5C76 /* shishamo2.png */,
+				E9387B781AA2E61F00CF5C76 /* shishamo3.png */,
 				E9F6F50F1AA220E800320828 /* ruru.png */,
 				E9F6F5031AA1FC8100320828 /* tozuru.jpg */,
 				E971AB671AA18D660041F524 /* haarcascade_frontalface_alt.xml */,
@@ -381,22 +426,31 @@
 			files = (
 				E9387B6F1AA2C65F00CF5C76 /* Images-2.xcassets in Resources */,
 				E9387B601AA2BDE700CF5C76 /* botan_shita.png in Resources */,
+				E9387B791AA2E61F00CF5C76 /* dashimaki1.png in Resources */,
 				E9387B351AA2A1F900CF5C76 /* syoukan.png in Resources */,
 				E9387B6A1AA2C27800CF5C76 /* syoukan_momo.png in Resources */,
 				E9E638B51AA0BAB0004EB467 /* Main.storyboard in Resources */,
+				E9387B7A1AA2E61F00CF5C76 /* dashimaki2.png in Resources */,
 				E9387B431AA2A62A00CF5C76 /* bg.png in Resources */,
 				E9387B5B1AA2B0FE00CF5C76 /* okaikei.png in Resources */,
 				E9387B611AA2BDE700CF5C76 /* botan_ue.png in Resources */,
 				E9F6F5141AA220E800320828 /* ruru.png in Resources */,
 				E9387B451AA2A62A00CF5C76 /* 50hashi.png in Resources */,
+				E9387B7D1AA2E61F00CF5C76 /* shishamo1.png in Resources */,
 				E9387B4D1AA2A63400CF5C76 /* spark.png in Resources */,
 				E9387B331AA2A09900CF5C76 /* syoukan_tsuki.png in Resources */,
+				E9387B8B1AA2E64A00CF5C76 /* table4.png in Resources */,
 				E9E638BA1AA0BAB0004EB467 /* LaunchScreen.xib in Resources */,
 				E9387B321AA2A09900CF5C76 /* ball_toduru.png in Resources */,
 				E9F6F5131AA220E800320828 /* menu.png in Resources */,
 				E9F6F5111AA220E800320828 /* botan_shita.png in Resources */,
+				E9387B711AA2E59200CF5C76 /* apple2.mp3 in Resources */,
+				E9387B8D1AA2E64A00CF5C76 /* yuka.jpg in Resources */,
+				E9387B7B1AA2E61F00CF5C76 /* dashimaki3.png in Resources */,
+				E9387B871AA2E64A00CF5C76 /* kaiten.png in Resources */,
 				E971AB681AA18D660041F524 /* haarcascade_frontalface_alt.xml in Resources */,
 				E9387B471AA2A62A00CF5C76 /* yuka.jpg in Resources */,
+				E9387B8A1AA2E64A00CF5C76 /* table3.png in Resources */,
 				E9387B5D1AA2BDAF00CF5C76 /* setsumei.png in Resources */,
 				E9387B401AA2A62A00CF5C76 /* ball_tozuru.png in Resources */,
 				E9F6F5121AA220E800320828 /* botan_ue.png in Resources */,
@@ -405,17 +459,23 @@
 				E9387B411AA2A62A00CF5C76 /* ball_tsuki.png in Resources */,
 				E9E638B71AA0BAB0004EB467 /* Images.xcassets in Resources */,
 				E9387B641AA2C0BE00CF5C76 /* ball_eikun.png in Resources */,
+				E9387B881AA2E64A00CF5C76 /* table1.png in Resources */,
 				E9F6F5061AA1FCC300320828 /* tozurusample.jpg in Resources */,
 				E9387B491AA2A62A00CF5C76 /* tatami.jpg in Resources */,
 				E9387B6D1AA2C36200CF5C76 /* syoukan_tozuru.png in Resources */,
+				E9387B7F1AA2E61F00CF5C76 /* shishamo3.png in Resources */,
 				E9387B421AA2A62A00CF5C76 /* syoukan_tsuki30.png in Resources */,
 				E9F6F5041AA1FC8100320828 /* tozuru.jpg in Resources */,
+				E9387B891AA2E64A00CF5C76 /* table2.png in Resources */,
 				E9387B461AA2A62A00CF5C76 /* 50mujitable.png in Resources */,
 				E9387B441AA2A62A00CF5C76 /* game.mp3 in Resources */,
 				E9387B481AA2A62A00CF5C76 /* kaiten.png in Resources */,
+				E9387B7C1AA2E61F00CF5C76 /* dashimaki4.png in Resources */,
 				E9387B2B1AA28BA800CF5C76 /* tegaki.otf in Resources */,
 				E9387B651AA2C0BE00CF5C76 /* ball_momo.png in Resources */,
+				E9387B7E1AA2E61F00CF5C76 /* shishamo2.png in Resources */,
 				E9387B691AA2C27800CF5C76 /* syoukan_eikun.png in Resources */,
+				E9387B8C1AA2E64A00CF5C76 /* tatami.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

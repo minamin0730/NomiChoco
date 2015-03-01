@@ -13,6 +13,34 @@
 		E9387B321AA2A09900CF5C76 /* ball_toduru.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B301AA2A09900CF5C76 /* ball_toduru.png */; };
 		E9387B331AA2A09900CF5C76 /* syoukan_tsuki.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B311AA2A09900CF5C76 /* syoukan_tsuki.png */; };
 		E9387B351AA2A1F900CF5C76 /* syoukan.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B341AA2A1F900CF5C76 /* syoukan.png */; };
+		E9387B401AA2A62A00CF5C76 /* ball_tozuru.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B361AA2A62A00CF5C76 /* ball_tozuru.png */; };
+		E9387B411AA2A62A00CF5C76 /* ball_tsuki.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B371AA2A62A00CF5C76 /* ball_tsuki.png */; };
+		E9387B421AA2A62A00CF5C76 /* syoukan_tsuki30.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B381AA2A62A00CF5C76 /* syoukan_tsuki30.png */; };
+		E9387B431AA2A62A00CF5C76 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B391AA2A62A00CF5C76 /* bg.png */; };
+		E9387B441AA2A62A00CF5C76 /* game.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9387B3A1AA2A62A00CF5C76 /* game.mp3 */; };
+		E9387B451AA2A62A00CF5C76 /* 50hashi.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B3B1AA2A62A00CF5C76 /* 50hashi.png */; };
+		E9387B461AA2A62A00CF5C76 /* 50mujitable.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B3C1AA2A62A00CF5C76 /* 50mujitable.png */; };
+		E9387B471AA2A62A00CF5C76 /* yuka.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9387B3D1AA2A62A00CF5C76 /* yuka.jpg */; };
+		E9387B481AA2A62A00CF5C76 /* kaiten.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B3E1AA2A62A00CF5C76 /* kaiten.png */; };
+		E9387B491AA2A62A00CF5C76 /* tatami.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9387B3F1AA2A62A00CF5C76 /* tatami.jpg */; };
+		E9387B4C1AA2A63400CF5C76 /* spark.sks in Resources */ = {isa = PBXBuildFile; fileRef = E9387B4A1AA2A63400CF5C76 /* spark.sks */; };
+		E9387B4D1AA2A63400CF5C76 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B4B1AA2A63400CF5C76 /* spark.png */; };
+		E9387B531AA2A70100CF5C76 /* SelectScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9387B4E1AA2A70100CF5C76 /* SelectScene.swift */; };
+		E9387B541AA2A70100CF5C76 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E9387B4F1AA2A70100CF5C76 /* GameScene.sks */; };
+		E9387B551AA2A70100CF5C76 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9387B501AA2A70100CF5C76 /* GameScene.swift */; };
+		E9387B561AA2A70100CF5C76 /* ResultScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9387B511AA2A70100CF5C76 /* ResultScene.swift */; };
+		E9387B571AA2A70100CF5C76 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9387B521AA2A70100CF5C76 /* GameViewController.swift */; };
+		E9387B591AA2ABE100CF5C76 /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9387B581AA2ABE100CF5C76 /* StartScene.swift */; };
+		E9387B5B1AA2B0FE00CF5C76 /* okaikei.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B5A1AA2B0FD00CF5C76 /* okaikei.png */; };
+		E9387B5D1AA2BDAF00CF5C76 /* setsumei.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B5C1AA2BDAF00CF5C76 /* setsumei.png */; };
+		E9387B601AA2BDE700CF5C76 /* botan_shita.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B5E1AA2BDE700CF5C76 /* botan_shita.png */; };
+		E9387B611AA2BDE700CF5C76 /* botan_ue.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B5F1AA2BDE700CF5C76 /* botan_ue.png */; };
+		E9387B641AA2C0BE00CF5C76 /* ball_eikun.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B621AA2C0BE00CF5C76 /* ball_eikun.png */; };
+		E9387B651AA2C0BE00CF5C76 /* ball_momo.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B631AA2C0BE00CF5C76 /* ball_momo.png */; };
+		E9387B691AA2C27800CF5C76 /* syoukan_eikun.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B661AA2C27800CF5C76 /* syoukan_eikun.png */; };
+		E9387B6A1AA2C27800CF5C76 /* syoukan_momo.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B671AA2C27800CF5C76 /* syoukan_momo.png */; };
+		E9387B6D1AA2C36200CF5C76 /* syoukan_tozuru.png in Resources */ = {isa = PBXBuildFile; fileRef = E9387B6C1AA2C36200CF5C76 /* syoukan_tozuru.png */; };
+		E9387B6F1AA2C65F00CF5C76 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9387B6E1AA2C65F00CF5C76 /* Images-2.xcassets */; };
 		E971AB681AA18D660041F524 /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = E971AB671AA18D660041F524 /* haarcascade_frontalface_alt.xml */; };
 		E971AB751AA190E80041F524 /* Detector.mm in Sources */ = {isa = PBXBuildFile; fileRef = E971AB741AA190E80041F524 /* Detector.mm */; };
 		E971AB781AA19CE00041F524 /* labelDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = E971AB771AA19CE00041F524 /* labelDetector.mm */; };
@@ -59,6 +87,34 @@
 		E9387B301AA2A09900CF5C76 /* ball_toduru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_toduru.png; sourceTree = "<group>"; };
 		E9387B311AA2A09900CF5C76 /* syoukan_tsuki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = syoukan_tsuki.png; sourceTree = "<group>"; };
 		E9387B341AA2A1F900CF5C76 /* syoukan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = syoukan.png; sourceTree = "<group>"; };
+		E9387B361AA2A62A00CF5C76 /* ball_tozuru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_tozuru.png; sourceTree = "<group>"; };
+		E9387B371AA2A62A00CF5C76 /* ball_tsuki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_tsuki.png; sourceTree = "<group>"; };
+		E9387B381AA2A62A00CF5C76 /* syoukan_tsuki30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = syoukan_tsuki30.png; sourceTree = "<group>"; };
+		E9387B391AA2A62A00CF5C76 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		E9387B3A1AA2A62A00CF5C76 /* game.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = game.mp3; sourceTree = "<group>"; };
+		E9387B3B1AA2A62A00CF5C76 /* 50hashi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 50hashi.png; sourceTree = "<group>"; };
+		E9387B3C1AA2A62A00CF5C76 /* 50mujitable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 50mujitable.png; sourceTree = "<group>"; };
+		E9387B3D1AA2A62A00CF5C76 /* yuka.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yuka.jpg; sourceTree = "<group>"; };
+		E9387B3E1AA2A62A00CF5C76 /* kaiten.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kaiten.png; sourceTree = "<group>"; };
+		E9387B3F1AA2A62A00CF5C76 /* tatami.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tatami.jpg; sourceTree = "<group>"; };
+		E9387B4A1AA2A63400CF5C76 /* spark.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = spark.sks; sourceTree = "<group>"; };
+		E9387B4B1AA2A63400CF5C76 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		E9387B4E1AA2A70100CF5C76 /* SelectScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectScene.swift; sourceTree = "<group>"; };
+		E9387B4F1AA2A70100CF5C76 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		E9387B501AA2A70100CF5C76 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		E9387B511AA2A70100CF5C76 /* ResultScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultScene.swift; sourceTree = "<group>"; };
+		E9387B521AA2A70100CF5C76 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		E9387B581AA2ABE100CF5C76 /* StartScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
+		E9387B5A1AA2B0FD00CF5C76 /* okaikei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = okaikei.png; sourceTree = "<group>"; };
+		E9387B5C1AA2BDAF00CF5C76 /* setsumei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setsumei.png; sourceTree = "<group>"; };
+		E9387B5E1AA2BDE700CF5C76 /* botan_shita.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = botan_shita.png; sourceTree = "<group>"; };
+		E9387B5F1AA2BDE700CF5C76 /* botan_ue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = botan_ue.png; sourceTree = "<group>"; };
+		E9387B621AA2C0BE00CF5C76 /* ball_eikun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_eikun.png; sourceTree = "<group>"; };
+		E9387B631AA2C0BE00CF5C76 /* ball_momo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_momo.png; sourceTree = "<group>"; };
+		E9387B661AA2C27800CF5C76 /* syoukan_eikun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = syoukan_eikun.png; sourceTree = "<group>"; };
+		E9387B671AA2C27800CF5C76 /* syoukan_momo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = syoukan_momo.png; sourceTree = "<group>"; };
+		E9387B6C1AA2C36200CF5C76 /* syoukan_tozuru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = syoukan_tozuru.png; sourceTree = "<group>"; };
+		E9387B6E1AA2C65F00CF5C76 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
 		E971AB671AA18D660041F524 /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
 		E971AB691AA18F9C0041F524 /* NomiChoco-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NomiChoco-Bridging-Header.h"; sourceTree = "<group>"; };
 		E971AB731AA190E80041F524 /* OpenCVSample-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OpenCVSample-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -131,6 +187,27 @@
 		E9E6389E1AA0BAB0004EB467 = {
 			isa = PBXGroup;
 			children = (
+				E9387B4A1AA2A63400CF5C76 /* spark.sks */,
+				E9387B4B1AA2A63400CF5C76 /* spark.png */,
+				E9387B361AA2A62A00CF5C76 /* ball_tozuru.png */,
+				E9387B371AA2A62A00CF5C76 /* ball_tsuki.png */,
+				E9387B381AA2A62A00CF5C76 /* syoukan_tsuki30.png */,
+				E9387B621AA2C0BE00CF5C76 /* ball_eikun.png */,
+				E9387B631AA2C0BE00CF5C76 /* ball_momo.png */,
+				E9387B391AA2A62A00CF5C76 /* bg.png */,
+				E9387B3A1AA2A62A00CF5C76 /* game.mp3 */,
+				E9387B3B1AA2A62A00CF5C76 /* 50hashi.png */,
+				E9387B3C1AA2A62A00CF5C76 /* 50mujitable.png */,
+				E9387B3D1AA2A62A00CF5C76 /* yuka.jpg */,
+				E9387B5A1AA2B0FD00CF5C76 /* okaikei.png */,
+				E9387B3E1AA2A62A00CF5C76 /* kaiten.png */,
+				E9387B3F1AA2A62A00CF5C76 /* tatami.jpg */,
+				E9387B5C1AA2BDAF00CF5C76 /* setsumei.png */,
+				E9387B5E1AA2BDE700CF5C76 /* botan_shita.png */,
+				E9387B5F1AA2BDE700CF5C76 /* botan_ue.png */,
+				E9387B661AA2C27800CF5C76 /* syoukan_eikun.png */,
+				E9387B6C1AA2C36200CF5C76 /* syoukan_tozuru.png */,
+				E9387B671AA2C27800CF5C76 /* syoukan_momo.png */,
 				E9E638A91AA0BAB0004EB467 /* NomiChoco */,
 				E9E638C21AA0BAB0004EB467 /* NomiChocoTests */,
 				E9E638A81AA0BAB0004EB467 /* Products */,
@@ -157,6 +234,11 @@
 				E971AB691AA18F9C0041F524 /* NomiChoco-Bridging-Header.h */,
 				E971AB731AA190E80041F524 /* OpenCVSample-Bridging-Header.h */,
 				E971AB741AA190E80041F524 /* Detector.mm */,
+				E9387B4E1AA2A70100CF5C76 /* SelectScene.swift */,
+				E9387B4F1AA2A70100CF5C76 /* GameScene.sks */,
+				E9387B501AA2A70100CF5C76 /* GameScene.swift */,
+				E9387B511AA2A70100CF5C76 /* ResultScene.swift */,
+				E9387B521AA2A70100CF5C76 /* GameViewController.swift */,
 				E9E638B31AA0BAB0004EB467 /* Main.storyboard */,
 				E9E638B61AA0BAB0004EB467 /* Images.xcassets */,
 				E9E638B81AA0BAB0004EB467 /* LaunchScreen.xib */,
@@ -169,6 +251,8 @@
 				E9F6F50A1AA1FF5400320828 /* matchcheckViewController.swift */,
 				E9F6F5181AA22A8800320828 /* sample.swift */,
 				E9F6F51A1AA22D4800320828 /* playrule.swift */,
+				E9387B581AA2ABE100CF5C76 /* StartScene.swift */,
+				E9387B6E1AA2C65F00CF5C76 /* Images-2.xcassets */,
 				E9E638AA1AA0BAB0004EB467 /* Supporting Files */,
 			);
 			path = NomiChoco;
@@ -215,9 +299,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E9E638A61AA0BAB0004EB467 /* NomiChoco */ = {
+		E9E638A61AA0BAB0004EB467 /* 呑みちょこ */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E9E638C91AA0BAB0004EB467 /* Build configuration list for PBXNativeTarget "NomiChoco" */;
+			buildConfigurationList = E9E638C91AA0BAB0004EB467 /* Build configuration list for PBXNativeTarget "呑みちょこ" */;
 			buildPhases = (
 				65EE61F845822CE87CC40580 /* Check Pods Manifest.lock */,
 				E9E638A31AA0BAB0004EB467 /* Sources */,
@@ -229,7 +313,7 @@
 			);
 			dependencies = (
 			);
-			name = NomiChoco;
+			name = "呑みちょこ";
 			productName = NomiChoco;
 			productReference = E9E638A71AA0BAB0004EB467 /* NomiChoco.app */;
 			productType = "com.apple.product-type.application";
@@ -284,7 +368,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E9E638A61AA0BAB0004EB467 /* NomiChoco */,
+				E9E638A61AA0BAB0004EB467 /* 呑みちょこ */,
 				E9E638BE1AA0BAB0004EB467 /* NomiChocoTests */,
 			);
 		};
@@ -295,20 +379,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9387B6F1AA2C65F00CF5C76 /* Images-2.xcassets in Resources */,
+				E9387B601AA2BDE700CF5C76 /* botan_shita.png in Resources */,
 				E9387B351AA2A1F900CF5C76 /* syoukan.png in Resources */,
+				E9387B6A1AA2C27800CF5C76 /* syoukan_momo.png in Resources */,
 				E9E638B51AA0BAB0004EB467 /* Main.storyboard in Resources */,
+				E9387B431AA2A62A00CF5C76 /* bg.png in Resources */,
+				E9387B5B1AA2B0FE00CF5C76 /* okaikei.png in Resources */,
+				E9387B611AA2BDE700CF5C76 /* botan_ue.png in Resources */,
 				E9F6F5141AA220E800320828 /* ruru.png in Resources */,
+				E9387B451AA2A62A00CF5C76 /* 50hashi.png in Resources */,
+				E9387B4D1AA2A63400CF5C76 /* spark.png in Resources */,
 				E9387B331AA2A09900CF5C76 /* syoukan_tsuki.png in Resources */,
 				E9E638BA1AA0BAB0004EB467 /* LaunchScreen.xib in Resources */,
 				E9387B321AA2A09900CF5C76 /* ball_toduru.png in Resources */,
 				E9F6F5131AA220E800320828 /* menu.png in Resources */,
 				E9F6F5111AA220E800320828 /* botan_shita.png in Resources */,
 				E971AB681AA18D660041F524 /* haarcascade_frontalface_alt.xml in Resources */,
+				E9387B471AA2A62A00CF5C76 /* yuka.jpg in Resources */,
+				E9387B5D1AA2BDAF00CF5C76 /* setsumei.png in Resources */,
+				E9387B401AA2A62A00CF5C76 /* ball_tozuru.png in Resources */,
 				E9F6F5121AA220E800320828 /* botan_ue.png in Resources */,
+				E9387B4C1AA2A63400CF5C76 /* spark.sks in Resources */,
+				E9387B541AA2A70100CF5C76 /* GameScene.sks in Resources */,
+				E9387B411AA2A62A00CF5C76 /* ball_tsuki.png in Resources */,
 				E9E638B71AA0BAB0004EB467 /* Images.xcassets in Resources */,
+				E9387B641AA2C0BE00CF5C76 /* ball_eikun.png in Resources */,
 				E9F6F5061AA1FCC300320828 /* tozurusample.jpg in Resources */,
+				E9387B491AA2A62A00CF5C76 /* tatami.jpg in Resources */,
+				E9387B6D1AA2C36200CF5C76 /* syoukan_tozuru.png in Resources */,
+				E9387B421AA2A62A00CF5C76 /* syoukan_tsuki30.png in Resources */,
 				E9F6F5041AA1FC8100320828 /* tozuru.jpg in Resources */,
+				E9387B461AA2A62A00CF5C76 /* 50mujitable.png in Resources */,
+				E9387B441AA2A62A00CF5C76 /* game.mp3 in Resources */,
+				E9387B481AA2A62A00CF5C76 /* kaiten.png in Resources */,
 				E9387B2B1AA28BA800CF5C76 /* tegaki.otf in Resources */,
+				E9387B651AA2C0BE00CF5C76 /* ball_momo.png in Resources */,
+				E9387B691AA2C27800CF5C76 /* syoukan_eikun.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,9 +473,14 @@
 				E9F6F50B1AA1FF5400320828 /* matchcheckViewController.swift in Sources */,
 				E971AB751AA190E80041F524 /* Detector.mm in Sources */,
 				E9F6F5191AA22A8800320828 /* sample.swift in Sources */,
+				E9387B591AA2ABE100CF5C76 /* StartScene.swift in Sources */,
+				E9387B561AA2A70100CF5C76 /* ResultScene.swift in Sources */,
 				E9F6F5171AA2252900320828 /* rule.swift in Sources */,
+				E9387B551AA2A70100CF5C76 /* GameScene.swift in Sources */,
+				E9387B571AA2A70100CF5C76 /* GameViewController.swift in Sources */,
 				E9F6F5091AA1FDCB00320828 /* templatematch.mm in Sources */,
 				E928747D1AA16241006BAD5D /* CameraUtil.swift in Sources */,
+				E9387B531AA2A70100CF5C76 /* SelectScene.swift in Sources */,
 				E9E638B01AA0BAB0004EB467 /* NomiChoco.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,7 +498,7 @@
 /* Begin PBXTargetDependency section */
 		E9E638C11AA0BAB0004EB467 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E9E638A61AA0BAB0004EB467 /* NomiChoco */;
+			target = E9E638A61AA0BAB0004EB467 /* 呑みちょこ */;
 			targetProxy = E9E638C01AA0BAB0004EB467 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -502,7 +614,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 383F603A68C2C8E3FAED4323 /* Pods.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = icon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -520,7 +633,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A0182BD453160A86C6C327C4 /* Pods.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = icon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -579,7 +693,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E9E638C91AA0BAB0004EB467 /* Build configuration list for PBXNativeTarget "NomiChoco" */ = {
+		E9E638C91AA0BAB0004EB467 /* Build configuration list for PBXNativeTarget "呑みちょこ" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E9E638CA1AA0BAB0004EB467 /* Debug */,

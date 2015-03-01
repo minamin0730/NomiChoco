@@ -24,6 +24,8 @@
             <string>chifont</string>
             <string>chifont</string>
             <string>chifont</string>
+            <string>chifont</string>
+            <string>chifont</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -142,69 +144,105 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="syoukan.png" translatesAutoresizingMaskIntoConstraints="NO" id="OKr-BC-Dmt">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="-1" y="-3" width="320" height="575"/>
+                                    <rect key="frame" x="0.0" y="-3" width="320" height="575"/>
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSw-UQ-r70">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="chifont" family="chifont" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="29" y="41" width="258" height="21"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="がでました！" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="if2-xw-Gs7">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="chifont" family="chifont" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="57" y="70" width="152" height="21"/>
+                                </variation>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENM-3V-tYM">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="戻る">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="chifont" family="chifont" pointSize="24"/>
+                                <state key="normal" title="もどる">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="501" width="46" height="30"/>
+                                    <rect key="frame" x="32" y="513" width="87" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="pushed:" destination="eOt-hA-SHL" eventType="touchUpInside" id="FBS-eU-Ydt"/>
                                     <segue destination="GcR-6x-I2X" kind="show" id="das-ZI-WKu"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ukK-6c-sMF">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="40" y="153" width="240" height="248"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aCz-qe-ier">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="eSw-UQ-r70" secondAttribute="centerX" id="0S3-pY-83I"/>
+                            <constraint firstItem="if2-xw-Gs7" firstAttribute="top" secondItem="eSw-UQ-r70" secondAttribute="bottom" constant="8" id="FYc-7k-2Gs"/>
                             <constraint firstItem="eSw-UQ-r70" firstAttribute="top" secondItem="knR-By-h07" secondAttribute="bottom" constant="50" id="HZN-9M-MPj"/>
+                            <constraint firstAttribute="centerX" secondItem="if2-xw-Gs7" secondAttribute="centerX" id="zGy-kp-k3L"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="OKr-BC-Dmt"/>
                                 <exclude reference="eSw-UQ-r70"/>
+                                <exclude reference="if2-xw-Gs7"/>
                                 <exclude reference="ENM-3V-tYM"/>
+                                <exclude reference="ukK-6c-sMF"/>
+                                <exclude reference="aCz-qe-ier"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="0S3-pY-83I"/>
                                 <exclude reference="HZN-9M-MPj"/>
+                                <exclude reference="FYc-7k-2Gs"/>
+                                <exclude reference="zGy-kp-k3L"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="OKr-BC-Dmt"/>
                                 <include reference="eSw-UQ-r70"/>
+                                <include reference="if2-xw-Gs7"/>
                                 <include reference="ENM-3V-tYM"/>
+                                <include reference="ukK-6c-sMF"/>
+                                <include reference="aCz-qe-ier"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="0S3-pY-83I"/>
                                 <include reference="HZN-9M-MPj"/>
+                                <include reference="FYc-7k-2Gs"/>
+                                <include reference="zGy-kp-k3L"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="background" destination="OKr-BC-Dmt" id="tto-Ns-8bH"/>
+                        <outlet property="charaView" destination="ukK-6c-sMF" id="Hqx-Kp-D9b"/>
                         <outlet property="label" destination="eSw-UQ-r70" id="UcM-bw-5Ty"/>
+                        <outlet property="whiteout" destination="aCz-qe-ier" id="gcT-lN-Gc6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iq3-Xv-GuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1125" y="-284"/>
+            <point key="canvasLocation" x="1113" y="-288"/>
         </scene>
         <!--Rule View Controller-->
         <scene sceneID="5h3-is-tG6">
@@ -218,7 +256,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ruru.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bbx-kk-qHw">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="setsumei.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bbx-kk-qHw">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="-4" width="320" height="575"/>
@@ -233,7 +271,7 @@
                                     <rect key="frame" x="52" y="187" width="207" height="33"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合わせてカシャッと撮影" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DL-cs-bY2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="向けてかざそう！" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DL-cs-bY2">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="chifont" family="chifont" pointSize="19"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -242,40 +280,13 @@
                                     <rect key="frame" x="52" y="220" width="270" height="33"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="しよう！" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JY0-Vj-zR1">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="chifont" family="chifont" pointSize="19"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="52" y="250" width="188" height="33"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="するとお酒のラベルに" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Oy-cq-BLN">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="chifont" family="chifont" pointSize="19"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="52" y="279" width="270" height="33"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合った“呑みっこ”が" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zk2-Pq-U4R">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="chifont" family="chifont" pointSize="19"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="52" y="310" width="270" height="33"/>
-                                </variation>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="出てくるよ！" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZh-Vb-CMK">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="chifont" family="chifont" pointSize="19"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="52" y="340" width="270" height="33"/>
+                                    <rect key="frame" x="52" y="312" width="270" height="33"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeR-t1-OVD">
@@ -306,6 +317,24 @@
                                     <segue destination="eOt-hA-SHL" kind="presentation" id="myA-tl-Rzm"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="するとお酒の銘柄に" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Oy-cq-BLN">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="chifont" family="chifont" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="52" y="251" width="270" height="33"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合った“呑みっこ”が" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zk2-Pq-U4R">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="chifont" family="chifont" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="52" y="282" width="270" height="33"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -313,12 +342,11 @@
                                 <exclude reference="Bbx-kk-qHw"/>
                                 <exclude reference="zQX-qk-ACg"/>
                                 <exclude reference="1DL-cs-bY2"/>
-                                <exclude reference="JY0-Vj-zR1"/>
-                                <exclude reference="8Oy-cq-BLN"/>
-                                <exclude reference="Zk2-Pq-U4R"/>
                                 <exclude reference="ZZh-Vb-CMK"/>
                                 <exclude reference="eeR-t1-OVD"/>
                                 <exclude reference="FzY-bw-AMz"/>
+                                <exclude reference="8Oy-cq-BLN"/>
+                                <exclude reference="Zk2-Pq-U4R"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -326,12 +354,11 @@
                                 <include reference="Bbx-kk-qHw"/>
                                 <include reference="zQX-qk-ACg"/>
                                 <include reference="1DL-cs-bY2"/>
-                                <include reference="JY0-Vj-zR1"/>
-                                <include reference="8Oy-cq-BLN"/>
-                                <include reference="Zk2-Pq-U4R"/>
                                 <include reference="ZZh-Vb-CMK"/>
                                 <include reference="eeR-t1-OVD"/>
                                 <include reference="FzY-bw-AMz"/>
+                                <include reference="8Oy-cq-BLN"/>
+                                <include reference="Zk2-Pq-U4R"/>
                             </mask>
                         </variation>
                     </view>
@@ -361,10 +388,10 @@
             </objects>
             <point key="canvasLocation" x="-1219.5" y="-5"/>
         </scene>
-        <!--View Controller-->
+        <!--Start Scene-->
         <scene sceneID="BkL-AN-mAJ">
             <objects>
-                <viewController id="GcR-6x-I2X" sceneMemberID="viewController">
+                <viewController id="GcR-6x-I2X" customClass="StartScene" customModule="NomiChoco" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VLf-6O-QSa"/>
                         <viewControllerLayoutGuide type="bottom" id="5jx-HS-NBE"/>
@@ -379,15 +406,33 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 </variation>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="botan_shita.png" translatesAutoresizingMaskIntoConstraints="NO" id="XIH-OJ-Qje">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="325" width="137" height="69"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="botan_shita.png" translatesAutoresizingMaskIntoConstraints="NO" id="roI-Ee-atL">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="254" width="137" height="71"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="botan_shita.png" translatesAutoresizingMaskIntoConstraints="NO" id="7BF-VD-R4i">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="195" width="137" height="61"/>
+                                </variation>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUF-RI-59M">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" name="chifont" family="chifont" pointSize="25"/>
-                                <state key="normal" title="のみっこ">
+                                <state key="normal" title="のみっこ！">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="34" y="337" width="107" height="30"/>
+                                    <rect key="frame" x="23" y="325" width="125" height="69"/>
                                 </variation>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="menu.png" translatesAutoresizingMaskIntoConstraints="NO" id="BAm-a0-gvu">
@@ -396,12 +441,12 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WnB-2F-DVt">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" name="chifont" family="chifont" pointSize="25"/>
-                                <state key="normal" title="おつまみ">
+                                <state key="normal" title="のみかい！">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="34" y="266" width="107" height="30"/>
+                                    <rect key="frame" x="23" y="254" width="125" height="71"/>
                                 </variation>
                                 <connections>
                                     <segue destination="AWn-Wp-bcu" kind="show" id="rye-np-PTM"/>
@@ -415,30 +460,44 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="27" y="201" width="133" height="30"/>
+                                    <rect key="frame" x="16" y="195" width="133" height="61"/>
                                 </variation>
                                 <connections>
                                     <segue destination="lFN-EE-7TY" kind="show" id="jXb-GA-EuC"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="botan_ue.png" translatesAutoresizingMaskIntoConstraints="NO" id="03l-um-dFc">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="11" y="149" width="137" height="61"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="uuX-CE-b9O"/>
+                                <exclude reference="XIH-OJ-Qje"/>
+                                <exclude reference="roI-Ee-atL"/>
+                                <exclude reference="7BF-VD-R4i"/>
                                 <exclude reference="UUF-RI-59M"/>
                                 <exclude reference="BAm-a0-gvu"/>
                                 <exclude reference="WnB-2F-DVt"/>
                                 <exclude reference="bYW-JA-lYN"/>
+                                <exclude reference="03l-um-dFc"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="uuX-CE-b9O"/>
+                                <include reference="XIH-OJ-Qje"/>
+                                <include reference="roI-Ee-atL"/>
+                                <include reference="7BF-VD-R4i"/>
                                 <include reference="UUF-RI-59M"/>
                                 <exclude reference="BAm-a0-gvu"/>
                                 <include reference="WnB-2F-DVt"/>
                                 <include reference="bYW-JA-lYN"/>
+                                <include reference="03l-um-dFc"/>
                             </mask>
                         </variation>
                     </view>
@@ -544,6 +603,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="193" y="504" width="111" height="39"/>
                                 </variation>
+                                <connections>
+                                    <segue destination="jPr-Ln-Xbx" kind="show" id="8Dc-iW-JUm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -578,12 +640,33 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0tA-ZR-uVR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="583.5" y="240"/>
+            <point key="canvasLocation" x="547.5" y="408"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="n1j-DZ-7MM">
+            <objects>
+                <viewController id="jPr-Ln-Xbx" customClass="GameViewController" customModule="NomiChoco" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fg7-FL-DVB"/>
+                        <viewControllerLayoutGuide type="bottom" id="IAF-jI-pFx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AxL-6i-vyf" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aQP-C3-iql" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1384.5" y="413"/>
         </scene>
     </scenes>
     <resources>
+        <image name="botan_shita.png" width="221" height="70"/>
+        <image name="botan_ue.png" width="221" height="70"/>
         <image name="menu.png" width="630" height="1136"/>
         <image name="ruru.png" width="630" height="1136"/>
+        <image name="setsumei.png" width="630" height="1136"/>
         <image name="syoukan.png" width="630" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
